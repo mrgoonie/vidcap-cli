@@ -164,5 +164,5 @@ MIT
 ## Links
 
 - [VidCap.xyz](https://vidcap.xyz)
-- [API Documentation](https://vidcap.xyz/docs/api)
+- [API Documentation](https://vidcap.xyz/api-docs)
 - [GitHub Issues](https://github.com/mrgoonie/vidcap-cli/issues)

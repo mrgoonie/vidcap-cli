@@ -46,7 +46,7 @@ Environment Variables:
   VIDCAP_TIMEOUT     Request timeout in milliseconds (default: 120000)
 
 Documentation:
-  https://vidcap.xyz/docs/api
+  https://vidcap.xyz/api-docs
 `
 	);
 
