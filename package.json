@@ -1,0 +1,47 @@
+{
+  "name": "vidcap-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for VidCap.xyz API - YouTube video transcription and summarization",
+  "main": "dist/index.js",
+  "bin": {
+    "vidcap": "./dist/index.js"
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "vidcap",
+    "youtube",
+    "transcription",
+    "summarization",
+    "cli",
+    "video",
+    "captions"
+  ],
+  "author": "VidCap",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicepkg/vidcap-cli"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^13.1.0",
+    "conf": "^10.2.0",
+    "ora": "^5.4.1",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}
