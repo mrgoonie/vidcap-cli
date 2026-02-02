@@ -14,7 +14,10 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "vidcap",
@@ -29,7 +32,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicepkg/vidcap-cli"
+    "url": "https://github.com/mrgoonie/vidcap-cli"
   },
   "dependencies": {
     "axios": "^1.9.0",
@@ -41,7 +44,11 @@
     "zod": "^3.24.3"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^22.0.0",
+    "dotenv": "^17.2.3",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
     "typescript": "^5.8.0"
   }
 }

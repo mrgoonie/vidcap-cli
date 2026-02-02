@@ -165,4 +165,4 @@ MIT
 
 - [VidCap.xyz](https://vidcap.xyz)
 - [API Documentation](https://vidcap.xyz/docs/api)
-- [GitHub Issues](https://github.com/nicepkg/vidcap-cli/issues)
+- [GitHub Issues](https://github.com/mrgoonie/vidcap-cli/issues)

@@ -61,15 +61,17 @@ export function handleError(error: unknown): never {
 }
 
 export function validateUrl(url: string): string {
+	let parsed: URL;
 	try {
-		const parsed = new URL(url);
-		if (!['http:', 'https:'].includes(parsed.protocol)) {
-			throw new Error('URL must use http or https protocol');
-		}
-		return url;
+		parsed = new URL(url);
 	} catch {
 		throw new Error(`Invalid URL: ${url}`);
 	}
+
+	if (!['http:', 'https:'].includes(parsed.protocol)) {
+		throw new Error('URL must use http or https protocol');
+	}
+	return url;
 }
 
 export function validateYoutubeUrl(url: string): string {
