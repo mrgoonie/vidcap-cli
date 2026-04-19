@@ -1,6 +1,6 @@
 {
   "name": "vidcap-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool for VidCap.xyz API - YouTube video transcription and summarization",
   "main": "dist/index.js",
   "bin": {
