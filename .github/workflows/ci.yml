@@ -22,3 +22,5 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm test
+        env:
+          VIDCAP_API_KEY: ${{ secrets.VIDCAP_API_KEY }}
