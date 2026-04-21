@@ -75,6 +75,7 @@ export interface CommentsData {
 
 export interface SearchResult {
 	videoId: string;
+	url: string;
 	title: string;
 	description: string;
 	channelId: string;
