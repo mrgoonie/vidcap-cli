@@ -153,8 +153,8 @@ done
 
 ```bash
 # Search and summarize first result
-VIDEO_ID=$(vidcap youtube search "topic" --json | jq -r '.items[0].videoId')
-vidcap youtube summary "https://youtube.com/watch?v=$VIDEO_ID"
+URL=$(vidcap youtube search "topic" --json | jq -r '.items[0].url')
+vidcap youtube summary "$URL"
 ```
 
 ## License

@@ -4,6 +4,7 @@ import chalk from 'chalk';
 import { apiGet } from '../../lib/api-client';
 import { handleError } from '../../lib/error-handler';
 import { output, OutputOptions, truncateText } from '../../lib/output-formatter';
+import { attachYoutubeUrls } from '../../lib/youtube-url';
 import { YoutubeSearchQuerySchema } from '../../schemas/youtube-validation-schemas';
 import { SearchData, SearchResult } from '../../types/api-response-types';
 
@@ -72,6 +73,8 @@ export function createSearchCommand(): Command {
 						throw new Error(response.message || 'Search failed');
 					}
 
+					response.data.items = attachYoutubeUrls(response.data.items || []);
+
 					const outputOptions: OutputOptions = {
 						json: options.json,
 						verbose: options.verbose,
@@ -95,7 +98,7 @@ export function createSearchCommand(): Command {
 							console.log(chalk.cyan(`${index + 1}. ${video.title}`));
 							console.log(chalk.gray(`   ${video.channelTitle}`));
 							console.log(`   ${truncateText(video.description || '', 100)}`);
-							console.log(chalk.blue(`   https://youtube.com/watch?v=${video.videoId}`));
+							console.log(chalk.blue(`   ${video.url}`));
 							console.log();
 						});
 
