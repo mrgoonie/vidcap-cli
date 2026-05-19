@@ -11,7 +11,7 @@ interface ConfigSchema {
 const config = new Conf<ConfigSchema>({
 	projectName: 'vidcap-cli',
 	defaults: {
-		baseUrl: 'https://vidcap.xyz/api/v1',
+		baseUrl: 'https://vidcap.zuey.me/api/v1',
 		timeout: 120000,
 		defaultLocale: 'en',
 	},
@@ -30,7 +30,7 @@ export function getApiKey(): string {
 }
 
 export function getBaseUrl(): string {
-	return process.env.VIDCAP_BASE_URL || config.get('baseUrl') || 'https://vidcap.xyz/api/v1';
+	return process.env.VIDCAP_BASE_URL || config.get('baseUrl') || 'https://vidcap.zuey.me/api/v1';
 }
 
 export function getTimeout(): number {

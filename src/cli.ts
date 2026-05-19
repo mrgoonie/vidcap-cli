@@ -42,11 +42,11 @@ Examples:
 
 Environment Variables:
   VIDCAP_API_KEY     API key for authentication (takes precedence over config)
-  VIDCAP_BASE_URL    Override base API URL (default: https://vidcap.xyz/api/v1)
+  VIDCAP_BASE_URL    Override base API URL (default: https://vidcap.zuey.me/api/v1)
   VIDCAP_TIMEOUT     Request timeout in milliseconds (default: 120000)
 
 Documentation:
-  https://vidcap.xyz/api-docs
+  https://vidcap.zuey.me/api-docs
 `
 	);
 

@@ -28,7 +28,7 @@ export function handleError(error: unknown): never {
 			console.error(chalk.yellow('Or set VIDCAP_API_KEY environment variable'));
 		} else if (status === 403) {
 			console.error(chalk.red('Access Denied: You do not have permission for this action.'));
-			console.error(chalk.yellow('Check your API plan limits at https://vidcap.xyz'));
+			console.error(chalk.yellow('Check your API plan limits at https://vidcap.zuey.me'));
 		} else if (status === 404) {
 			console.error(chalk.red('Not Found: The requested resource does not exist.'));
 		} else if (status === 429) {

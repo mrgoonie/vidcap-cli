@@ -21,7 +21,7 @@ describe('Config Manager', () => {
 	describe('getBaseUrl', () => {
 		it('should return default base URL', () => {
 			const baseUrl = getBaseUrl();
-			expect(baseUrl).toBe('https://vidcap.xyz/api/v1');
+			expect(baseUrl).toBe('https://vidcap.zuey.me/api/v1');
 		});
 	});
 

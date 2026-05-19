@@ -1,6 +1,6 @@
 # vidcap-cli
 
-CLI tool for [VidCap.xyz](https://vidcap.xyz) API - YouTube video transcription and summarization.
+CLI tool for [VidCap](https://vidcap.zuey.me) API - YouTube video transcription and summarization.
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install -g vidcap-cli
 
 ## Setup
 
-Set your API key (get one from [vidcap.xyz](https://vidcap.xyz)):
+Set your API key (get one from [vidcap.zuey.me](https://vidcap.zuey.me)):
 
 ```bash
 # Option 1: Environment variable (recommended)
@@ -122,7 +122,7 @@ vidcap youtube info "https://youtube.com/watch?v=xxx" --json | jq .title
 | Variable | Description | Default |
 |----------|-------------|---------|
 | `VIDCAP_API_KEY` | API key for authentication | - |
-| `VIDCAP_BASE_URL` | API base URL | `https://vidcap.xyz/api/v1` |
+| `VIDCAP_BASE_URL` | API base URL | `https://vidcap.zuey.me/api/v1` |
 | `VIDCAP_TIMEOUT` | Request timeout (ms) | `120000` |
 | `VIDCAP_LOCALE` | Default language | `en` |
 | `VIDCAP_MODEL` | Default AI model | - |
@@ -163,6 +163,6 @@ MIT
 
 ## Links
 
-- [VidCap.xyz](https://vidcap.xyz)
-- [API Documentation](https://vidcap.xyz/api-docs)
+- [VidCap](https://vidcap.zuey.me)
+- [API Documentation](https://vidcap.zuey.me/api-docs)
 - [GitHub Issues](https://github.com/mrgoonie/vidcap-cli/issues)

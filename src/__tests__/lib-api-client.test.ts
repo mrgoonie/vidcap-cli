@@ -9,7 +9,7 @@ describe('API Client', () => {
 		it('should create an axios instance with correct config', () => {
 			const client = getApiClient();
 			expect(client).toBeDefined();
-			expect(client.defaults.baseURL).toBe('https://vidcap.xyz/api/v1');
+			expect(client.defaults.baseURL).toBe('https://vidcap.zuey.me/api/v1');
 			expect(client.defaults.headers['X-API-Key']).toBeDefined();
 		});
 
